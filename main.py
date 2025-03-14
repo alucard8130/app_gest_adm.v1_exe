@@ -957,6 +957,7 @@ class PantallaPrincipal():
 #############################PANTALLA PRINCIPAL GESTOR AREAS COMUNES#############################################    
     def abrir_form_PPAC(self):
         self.ppac = uic.loadUi("gui/formPrincipalAC.ui")
+        self.ppac.setWindowTitle("Cartera Areas Comunes")
         self.ppac.show()   
         self.set_cmb_contratos_PPAC()
         self.ppac.cmbContrato.currentIndexChanged.connect(self.set_cmb_area_PPAC)
@@ -969,6 +970,8 @@ class PantallaPrincipal():
     def validar_campos_PPAC(self): 
         if self.ppac.cmbContrato.currentIndex()==0: 
             m=QMessageBox()
+            m.setWindowTitle("registrar cobranza")
+            m.setIcon(QMessageBox.Icon.Information)
             m.setText("Selecciona una opcion")
             m.exec()
         else:
@@ -984,8 +987,9 @@ class PantallaPrincipal():
         search=AreasData()
         data=search.lista_areas_x_contrato(self.ppac.cmbContrato.currentText())
         self.ppac.cmbAreaC.clear()
-        self.ppac.txtCliente.clear()
+        self.ppac.txtCliente.setText("")
         self.ppac.tblCarteraAC.clearContents()
+        self.ppac.tblCarteraAC.setRowCount(0)
         self.ppac.txtSaldo.setText("")   
         for item in data:
             self.ppac.cmbAreaC.addItem(item[3])
@@ -998,6 +1002,7 @@ class PantallaPrincipal():
 ################################## PAGOS---COBRANZA--AC --######################################        
     def abrir_form_pagosAC(self):
         self.fpac=uic.loadUi("gui/formRegPagosAC.ui")
+        self.fpac.setWindowTitle("registro cobranza cuotas")
         self.fpac.show()
         self.set_cmb_factura_fpac()
         self.set_cmb_cta_banco_fpac()
@@ -1019,8 +1024,8 @@ class PantallaPrincipal():
              
     def registrar_cobranzaAC(self):
         m=QMessageBox()
-        m.setIcon(QMessageBox.Icon.Warning)
-        m.setWindowTitle("Advertencia")
+        m.setIcon(QMessageBox.Icon.Information)
+        m.setWindowTitle("registro cobranza")
         m.setStandardButtons(QMessageBox.StandardButton.Ok)
                 
         if self.fpac.txtAreaC.text()=="":
@@ -1116,11 +1121,14 @@ class PantallaPrincipal():
     def abrir_form_facturacionAC(self):
         if self.ppac.cmbContrato.currentIndex()==0:
             m=QMessageBox()
+            m.setWindowTitle("registro facturas")
+            m.setIcon(QMessageBox.Icon.Information)
             m.setText("Selecciona una Opcion")
             m.exec()
             self.ppac.cmbContrato.setFocus()
         else:
             self.ffac=uic.loadUi("gui/formRegFacturasAC.ui")
+            self.ffac.setWindowTitle("registro facturas cuotas")
             self.ffac.show()
             self.ffac.txtNumFact.setText("F-")
             self.ffac.txtAreaC.setText(self.ppac.cmbAreaC.currentText())
@@ -1130,7 +1138,7 @@ class PantallaPrincipal():
     def registrar_facturacionAC(self):
         m=QMessageBox()
         m.setIcon(QMessageBox.Icon.Warning)
-        m.setWindowTitle("Advertencia")
+        m.setWindowTitle("registro facturacion")
         m.setStandardButtons(QMessageBox.StandardButton.Ok)
                 
         if self.ffac.txtAreaC.text()=="":
@@ -1221,6 +1229,7 @@ class PantallaPrincipal():
 ##########################  CLIENTES #########################################   
     def abrir_form_clientes(self):
         self.fcl=uic.loadUi("gui/formClientes.ui")
+        self.fcl.setWindowTitle("Registro Clientes")
         self.fcl.show()
         self.fcl.checkBoxStatus.setChecked(True)
         self.fcl.btnGuardar.clicked.connect(self.registrar_cliente)
@@ -1228,8 +1237,8 @@ class PantallaPrincipal():
        
     def registrar_cliente(self):      
             m=QMessageBox()
-            m.setIcon(QMessageBox.Icon.Warning)
-            m.setWindowTitle("Advertencia")
+            m.setIcon(QMessageBox.Icon.Information)
+            m.setWindowTitle("registro clientes")
             m.setStandardButtons(QMessageBox.StandardButton.Ok)
         
             if self.fcl.txtNombreCliente.text()=="":       
@@ -1307,6 +1316,7 @@ class PantallaPrincipal():
 #########################CTA BANCARIA#################################################
     def abrir_form_banco(self):
         self.fban=uic.loadUi("gui/formBanco.ui")
+        self.fban.setWindowTitle("Registro Cuentas Bancarias")
         self.fban.btnGuardar.clicked.connect(self.registrar_cta_banco)
         self.fban.btnSalir.clicked.connect(self.salir_form_banco)
         self.fban.show()
@@ -1314,7 +1324,7 @@ class PantallaPrincipal():
     def registrar_cta_banco(self):
         m=QMessageBox()
         m.setIcon(QMessageBox.Icon.Information)
-        m.setWindowTitle("Registro Cta Bancaria")
+        m.setWindowTitle("Cuenta Bancaria")
         m.setStandardButtons(QMessageBox.StandardButton.Ok)
         
         if self.fban.txtNombreBanco.text()=="":       
@@ -1363,6 +1373,7 @@ class PantallaPrincipal():
 ##################################REGISTRAR CONTRATOS#############################################
     def abrir_form_contratos(self):
         self.fcon=uic.loadUi("gui/formContratos.ui")
+        self.fcon.setWindowTitle("Registro Contratos Areas Comunes")
         self.fcon.show()
         self.set_cmb_ac()
         self.set_cmb_clientes_c()
@@ -1383,7 +1394,6 @@ class PantallaPrincipal():
         datos=obj.lista_cuotas_x_area(self.fcon.cmbAreaComun.currentText())
         self.fcon.txtCuota.setText("")
         for item in datos:
-            #self.fcon.txtCuota.setText(f"{item[3]:,.2f}")
             self.fcon.txtCuota.setText(str(item[3]))
             self.fcon.txtDG.setText(str(item[4]))
             
@@ -1396,7 +1406,7 @@ class PantallaPrincipal():
     def registrar_contrato(self):
         m=QMessageBox()
         m.setIcon(QMessageBox.Icon.Information)
-        m.setWindowTitle("Registro Cta Bancaria")
+        m.setWindowTitle("contratos areas comunes")
         m.setStandardButtons(QMessageBox.StandardButton.Ok)
         
         fecha_ini=self.fcon.dateInicial.date().toString("yyyy-MM-dd")
@@ -1484,6 +1494,7 @@ class PantallaPrincipal():
 ##################################BUSCAR Y EDITAR CONTRATOS#############################################           
     def abrir_form_buscar_contratos(self):
         self.fbc=uic.loadUi("gui/formBcontratos.ui")
+        self.fbc.setWindowTitle("Buscar y Editar Contratos Areas Comunes")
         self.fbc.show()
         self.set_lista_contratos()
         self.fbc.cmbContrato.setCurrentIndex(0)
@@ -1502,6 +1513,8 @@ class PantallaPrincipal():
         data=search.info_contratos(self.fbc.cmbContrato.currentText())
         if data==[]:
                 m=QMessageBox()
+                m.setWindowTitle("buscar contrato")
+                m.setIcon(QMessageBox.Icon.Information)
                 m.setText("No hay informacion")
                 m.exec()
         else:
@@ -1519,13 +1532,13 @@ class PantallaPrincipal():
         if self.fbc.cmbContrato.currentIndex()==0:
             m=QMessageBox()
             m.setIcon(QMessageBox.Icon.Information)
-            m.setWindowTitle("Edicion Contratos AC")
+            m.setWindowTitle("Edicion Contratos")
             m.setText("Selecciona una Opcion")
             m.exec()
         else:
             m=QMessageBox()
             m.setIcon(QMessageBox.Icon.Information)
-            m.setWindowTitle("Edicion Contratos AC")
+            m.setWindowTitle("Edicion Contratos")
             m.setText("Se editaran los datos del contrato,\ncontinuar...?")
             m.setStandardButtons(QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
             res=m.exec()
@@ -1569,6 +1582,8 @@ class PantallaPrincipal():
     def mostrar_informacionCM(self):
         if self.ppcm.cmblocal.currentIndex()==0 :
             m=QMessageBox()
+            m.setIcon(QMessageBox.Icon.Information)
+            m.setWindowTitle("informacion cartera")
             m.setText("Seleccione una Opcion")
             m.exec()
             self.ppcm.cmblocal.setFocus()
@@ -1579,11 +1594,12 @@ class PantallaPrincipal():
             saldo=0
             if data==[]:
                 m=QMessageBox()
+                m.setIcon(QMessageBox.Icon.Information)
+                m.setWindowTitle("informacion cartera")
                 m.setText("No hay informacion")
                 m.exec()
                 self.ppcm.cmblocal.setFocus()
             else:
-                
                 self.ppcm.tblCarteraCM.setRowCount(len(data))
                 for item in data:
                     saldo += float(item[4])
@@ -1649,6 +1665,8 @@ class PantallaPrincipal():
     def mostrar_informacionAC(self):
         if self.ppac.cmbContrato.currentIndex()==0:
             m=QMessageBox()
+            m.setIcon(QMessageBox.Icon.Information)
+            m.setWindowTitle("informacion cartera")
             m.setText("Selecciona una Opcion")
             m.exec()
             self.ppac.cmbContrato.setFocus()
@@ -1659,6 +1677,8 @@ class PantallaPrincipal():
             saldo=0
             if data==[]:
                 m=QMessageBox()
+                m.setWindowTitle("informacion cartera")
+                m.setIcon(QMessageBox.Icon.Information)
                 m.setText("No hay informacion")
                 m.exec()
                 self.ppac.tblCarteraAC.clearContents()
@@ -1683,45 +1703,53 @@ class PantallaPrincipal():
                      fila+=1
 
     def exportar_info_a_excelAC(self):
-        if self.ppac.tblCarteraAC.rowCount() > 0:    
-            file_dialog = QFileDialog()
-            file_path, _ = file_dialog.getSaveFileName(self.pp, "Guardar archivo", "", "Archivos Excel (*.xlsx);;Todos los archivos (*)")
-                            
-            if file_path:
-                try:                            
-                    workbook = xlsxwriter.Workbook(file_path)
-                    worksheet = workbook.add_worksheet()
-                                    
-                    headers = ["contrato", "tipo_cuota","num_fact", "importe_adeudo", "importe_pago", "importe_saldo", "fecha", "forma_pago", "cta_banco","status"]
-                    for col_num, header in enumerate(headers):
-                        worksheet.write(0, col_num, header)           
-                        for row_num in range(self.ppac.tblCarteraAC.rowCount()):
-                            for col_num in range(self.ppac.tblCarteraAC.columnCount()):
-                                worksheet.write(row_num + 1, col_num, self.ppac.tblCarteraAC.item(row_num, col_num).text())
-                                    
-                    workbook.close()               
-                    m = QMessageBox()
-                    m.setIcon(QMessageBox.Icon.Information)
-                    m.setWindowTitle("Exportar a Excel")
-                    m.setText("Datos exportados exitosamente a Excel")
-                    m.exec()
-                except Exception as e:
-                    m = QMessageBox()
-                    m.setIcon(QMessageBox.Icon.Critical)
-                    m.setWindowTitle("Error")
-                    m.setText(f"Error al exportar a Excel: {e}")
-                    m.exec()
-        else:
-            m = QMessageBox()
+        if self.ppac.cmbContrato.currentIndex()==0:
+            m=QMessageBox()
             m.setIcon(QMessageBox.Icon.Warning)
-            m.setWindowTitle("Exportar a Excel")
-            m.setText("No hay datos para exportar")
+            m.setWindowTitle("exportar informacion")
+            m.setText("Seleccione una Opcion")
             m.exec()
+        else:    
+            if self.ppac.tblCarteraAC.rowCount() > 0:    
+                file_dialog = QFileDialog()
+                file_path, _ = file_dialog.getSaveFileName(self.pp, "Guardar archivo", "", "Archivos Excel (*.xlsx);;Todos los archivos (*)")
+                                
+                if file_path:
+                    try:                            
+                        workbook = xlsxwriter.Workbook(file_path)
+                        worksheet = workbook.add_worksheet()
+                                        
+                        headers = ["contrato", "tipo_cuota","num_fact", "importe_adeudo", "importe_pago", "importe_saldo", "fecha", "forma_pago", "cta_banco","status"]
+                        for col_num, header in enumerate(headers):
+                            worksheet.write(0, col_num, header)           
+                            for row_num in range(self.ppac.tblCarteraAC.rowCount()):
+                                for col_num in range(self.ppac.tblCarteraAC.columnCount()):
+                                    worksheet.write(row_num + 1, col_num, self.ppac.tblCarteraAC.item(row_num, col_num).text())                
+                        workbook.close()               
+                        m = QMessageBox()
+                        m.setIcon(QMessageBox.Icon.Information)
+                        m.setWindowTitle("Exportar a Excel")
+                        m.setText("Datos exportados exitosamente a Excel")
+                        m.exec()
+                    except Exception as e:
+                        m = QMessageBox()
+                        m.setIcon(QMessageBox.Icon.Critical)
+                        m.setWindowTitle("Error")
+                        m.setText(f"Error al exportar a Excel: {e}")
+                        m.exec()
+                else: pass        
+            elif self.ppac.tblCarteraAC.rowCount() < 0:    
+                m = QMessageBox()
+                m.setIcon(QMessageBox.Icon.Warning)
+                m.setWindowTitle("Exportar a Excel")
+                m.setText("No hay datos para exportar")
+                m.exec()
                         
                 
 ########################################CARGA MASIVA DE CUOTAS###########################################################
     def abrir_form_cmasiva(self):
         self.ffm=uic.loadUi("gui/formFactMasiva.ui")
+        self.ffm.setWindowTitle("Carga Mensual Facturas Cuotas")
         self.ffm.show()
         self.ffm.cmbTcartera.setCurrentIndex(0)
         self.ffm.btnEjecutar.clicked.connect(self.seleccion_tipo_cartera)
@@ -1730,7 +1758,7 @@ class PantallaPrincipal():
     def seleccion_tipo_cartera(self):
         m=QMessageBox()
         m.setIcon(QMessageBox.Icon.Information)
-        m.setWindowTitle("Carga Masiva.")
+        m.setWindowTitle("Carga Mensual")
         if self.ffm.cmbTcartera.currentIndex()==0:
             m.setText("Selecciona una Opcion")
             m.exec()
@@ -1754,8 +1782,8 @@ class PantallaPrincipal():
     def registro_masivo_cuotas_locales(self):
         m=QMessageBox()  
         m.setIcon(QMessageBox.Icon.Warning)
-        m.setWindowTitle("Carga Masiva Cuotas.")
-        m.setText("¿¿Se generaran las cuotas?? continuar....")
+        m.setWindowTitle("Carga Cuotas Locales.")
+        m.setText("¿¿Se generaran las cuotas?? \ncontinuar....")
         m.setStandardButtons(QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
         res=m.exec()
             
@@ -1765,9 +1793,9 @@ class PantallaPrincipal():
             p=self.ffm.fechaPeriodo.date().toString("MMyy")
             if data==[]:
                 m=QMessageBox()
-                m.setWindowTitle("Carga Masiva Cuotas.")  
+                m.setWindowTitle("Carga Mensual")  
                 m.setIcon(QMessageBox.Icon.Information)
-                m.setText("No hay locales en la base de datos")
+                m.setText("sin informacion bd")
                 m.exec()
             else:
                 reg_Periodo=RegPeriodoFacturacion(
@@ -1812,13 +1840,13 @@ class PantallaPrincipal():
                             statusPago=False,
                             usuario=self.pp.lblName_User.text(),
                             fechaReg=current_datetime.strftime("%Y-%m-%d %H:%M:%S"),
-                            comentarios="Facturacion masiva " + self.ffm.fechaPeriodo.date().toString("yyyy-MM")         
+                            comentarios="carga mensual " + self.ffm.fechaPeriodo.date().toString("yyyy-MM")         
                             )
                         objData=RegCarteraData()
                         objData._registrar(info=reg_cartera)
                          
                     m.setIcon(QMessageBox.Icon.Information)
-                    m.setText("carga masiva de cuotas exitosa") 
+                    m.setText("carga mensual de cuotas exitosa") 
                     m.exec()
                            
                 else:
@@ -1828,13 +1856,12 @@ class PantallaPrincipal():
                                         
         elif res==QMessageBox.StandardButton.Cancel:
             m.close()
-            
-                        
+                                   
     def registro_masivo_cuotas_areas(self):
         m=QMessageBox()  
         m.setIcon(QMessageBox.Icon.Warning)
-        m.setWindowTitle("Carga Masiva Cuotas.")
-        m.setText("¿¿Se generaran las cuotas?? continuar....")
+        m.setWindowTitle("Carga Cuotas Areas C.")
+        m.setText("¿¿Se generaran las facturas \npor cuotas areas comunes?? continuar....")
         m.setStandardButtons(QMessageBox.StandardButton.Ok | QMessageBox.StandardButton.Cancel)
         res=m.exec()
             
@@ -1844,9 +1871,9 @@ class PantallaPrincipal():
             p=self.ffm.fechaPeriodo.date().toString("MMyy")
             if data==[]:
                 m=QMessageBox()
-                m.setWindowTitle("Carga Masiva Cuotas.")  
+                m.setWindowTitle("Carga Mensual.")  
                 m.setIcon(QMessageBox.Icon.Information)
-                m.setText("No hay areras en la base de datos")
+                m.setText("sin informacion bd")
                 m.exec()
             else:
                 reg_Periodo=RegPeriodoFacturacion(
@@ -1897,7 +1924,7 @@ class PantallaPrincipal():
                         objData._registrar(info=reg_cartera)
                         
                     m.setIcon(QMessageBox.Icon.Information)
-                    m.setText("carga masiva de cuotas exitosa") 
+                    m.setText("carga mensual de cuotas exitosa") 
                     m.exec()     
                           
                 else:
@@ -1907,8 +1934,7 @@ class PantallaPrincipal():
 
         elif res==QMessageBox.StandardButton.Cancel:
             m.close()
-            
-   
+              
     def salir_form_cmasiva(self):
         self.ffm.close() 
         
@@ -1916,6 +1942,7 @@ class PantallaPrincipal():
 ###################################################MODULO GASTOS#####################################################################
     def abrir_form_gastos(self):
         self.fexp=uic.loadUi("gui/formRegGastos.ui")
+        self.fexp.setWindowTitle("Registro Gastos Mensuales")
         self.fexp.show()
         self.set_cmb_proveedor()
         self.fexp.btnRegistrar.clicked.connect(self.registrar_gasto)
@@ -1995,6 +2022,7 @@ class PantallaPrincipal():
 
     def abrir_form_alta_proveedor(self):
         self.fprov=uic.loadUi("gui/formRegProveedor.ui")
+        self.fprov.setWindowTitle("Registro de Proveedor")
         self.fprov.show()
         self.fprov.btnRegistrar.clicked.connect(self.registrar_proveedor)
         self.fprov.btnSalir.clicked.connect(self.salir_form_proveedores)
@@ -2069,6 +2097,7 @@ class PantallaPrincipal():
 
     def abrir_form_alta_empleado(self):
         self.femp=uic.loadUi("gui/formEmpleados.ui")
+        self.femp.setWindowTitle("Registro Empleados")
         self.femp.show()
         self.femp.btnGuardar.clicked.connect(self.registrar_empleado)
         self.femp.btnSalir.clicked.connect(self.salir_form_empleados)

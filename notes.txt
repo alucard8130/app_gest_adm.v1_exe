@@ -63,4 +63,4 @@ revisar antes de dar registrar o editar valide si tiene elementos los widgets
 
 en alta de areas comunes falta programar proceso de edicion
 
-
+\n
