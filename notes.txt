@@ -1,0 +1,66 @@
+bd reg_gastos
+id, 
+proveedor_name, 
+tipo_gasto: conservacion, publicidad, eventos, nomina, operacion, administrativo, estacionamiento, oficina, 
+impuestos,seguridad social, asamblea, comite, extraordinario,financiero, no deducible, otro 
+descripcion_gasto,
+forma_pago,
+num_cheque,
+importe_pago,
+subtotal,
+iva,
+iva_ret,
+isr_ret,
+fecha_gasto,
+usuario,
+comentarios,
+fecha_reg,
+
+
+bd proveedores
+id,
+nombre_razon,
+rfc,
+curp,
+tipo_servicio,
+cuenta_banco,
+direccion,
+telefono,
+email,
+usuario,
+fecha_reg
+
+bd empleados
+id, nombre,apellido_paterno,apellido_materno,rfc,curp,NSS,fecha_nacimiento,
+puesto,departamento,sueldo_diario,direccion,telefono,email, fecha_ingreso,fecha_baja,antiguedad,status,usuario,fecha_reg  
+
+
+bd otros_ingresos
+id,
+cliente,
+tipo_ingreso: intereses inversiones, utilidad cambiaria, perdida cambiaria, venta activos, venta carton, otro
+descripcion,
+importe_total,
+forma_pago,
+cta_bancaria,
+fecha_pago,
+usuario,
+fecha_registro,
+comentarios,
+
+--add-data{source}:{dest}
+
+script para auto py to exe
+pyinstaller --onedir --windowed --add-data "{app_gest_adm.v1\data};{data/}" {install_gac}.py app.py
+pyinstaller --onefile --windowed --add-data "{app_gest_adm.v1\data};{data/}" {install_gac}.py app.py 
+pyinstaller --onefile --windowed --add-data "gui;gui" --add-data "model;model" --add-data "data;data" {install_gac}.py  app.py 
+
+Copy-Item -Path 'C:\Users\smart\OneDrive\Escritorio\app_gest_adm.v1\data' -Destination '{destination_path}' -Recurse
+
+C:\Users\smart\AppData\Roaming\Python\Python312\site-packages
+
+revisar antes de dar registrar o editar valide si tiene elementos los widgets
+
+en alta de areas comunes falta programar proceso de edicion
+
+

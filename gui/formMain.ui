@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>formMain</class>
+ <widget class="QMainWindow" name="formMain">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1132</width>
+    <height>805</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::TabFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ContextMenuPolicy::PreventContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(245, 245, 252);</string>
+   </property>
+   <widget class="QLabel" name="lblImagen">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>680</width>
+      <height>695</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/financier.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-60</x>
+      <y>710</y>
+      <width>1231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Goudy Old Style</family>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(19, 39, 113);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Sunken</enum>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>GESTOR ADMINISTRATIVO CONDOMINAL </string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame1">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>10</y>
+      <width>531</width>
+      <height>690</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="txtUsuario">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>310</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>10</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Captura Usuario</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPassword">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>370</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Captura Contraseña</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEntrar">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>440</y>
+       <width>250</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 94, 242);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Entrar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRegresar">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>560</y>
+       <width>250</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 94, 242);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Regresar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnNewUser">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>490</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 94, 242);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Nuevo Usuario</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtNameUser">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>240</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>10</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::ContextMenuPolicy::ActionsContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Captura Nombre Usuario</string>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::CursorMoveStyle::VisualMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblRecPassword">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>410</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <italic>true</italic>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 78, 2);
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 235, 235, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.425 rgba(255, 132, 132, 156), stop:0.44 rgba(252, 128, 128, 80), stop:1 rgba(255, 255, 255, 0));</string>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Plain</enum>
+     </property>
+     <property name="text">
+      <string>Recuperar Contraseña</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRecuperar">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>610</y>
+       <width>250</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 94, 242);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Recuperar</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnInvisible">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>640</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(245, 245, 252);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>70</y>
+       <width>121</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../iconos/Oxygen-Icons.org-Oxygen-Apps-preferences-system-login.256.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>375</y>
+       <width>22</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReiniciar">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>530</y>
+       <width>250</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Comic Sans MS</family>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 94, 242);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+     </property>
+     <property name="text">
+      <string>Reiniciar Sistema</string>
+     </property>
+    </widget>
+    <zorder>txtUsuario</zorder>
+    <zorder>txtPassword</zorder>
+    <zorder>btnEntrar</zorder>
+    <zorder>btnRegresar</zorder>
+    <zorder>btnNewUser</zorder>
+    <zorder>txtNameUser</zorder>
+    <zorder>btnRecuperar</zorder>
+    <zorder>lblRecPassword</zorder>
+    <zorder>btnInvisible</zorder>
+    <zorder>label_2</zorder>
+    <zorder>toolButton</zorder>
+    <zorder>btnReiniciar</zorder>
+   </widget>
+   <widget class="QPushButton" name="btnIngresar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#010223;&quot;&gt;Ingresar Sistema&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../iconos/Webiconset-Application-Register.128 (1).png</normaloff>../iconos/Webiconset-Application-Register.128 (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSalirPP">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>660</y>
+      <width>61</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>8</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::FocusPolicy::WheelFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#010223;&quot;&gt;Salir Sistema&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-radius:5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../iconos/eliminar.png</normaloff>../iconos/eliminar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblName_User">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>690</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 78, 2);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+   </widget>
+   <zorder>frame1</zorder>
+   <zorder>lblImagen</zorder>
+   <zorder>label</zorder>
+   <zorder>btnIngresar</zorder>
+   <zorder>btnSalirPP</zorder>
+   <zorder>lblName_User</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1132</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Goudy Old Style</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ContextMenuPolicy::ActionsContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(7, 12, 88);
+
+color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QMenu" name="menuLocales_Comerciales">
+    <property name="title">
+     <string>Locales Comerciales</string>
+    </property>
+    <addaction name="actionRegMovCM"/>
+    <addaction name="actionAltaLocal"/>
+   </widget>
+   <widget class="QMenu" name="menuAreas_comunes">
+    <property name="title">
+     <string>Areas comunes</string>
+    </property>
+    <addaction name="actionRegMovAC"/>
+    <addaction name="actionAltaAC"/>
+    <addaction name="actionRegContrato"/>
+    <addaction name="actionBuscar_Contratos"/>
+   </widget>
+   <widget class="QMenu" name="menuFacturacion">
+    <property name="title">
+     <string>Facturacion</string>
+    </property>
+    <addaction name="actionRegistrar_cliente"/>
+    <addaction name="actionFacturacion_Masiva"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuActualizar_Cuotas">
+    <property name="title">
+     <string>Actualizar Cuotas</string>
+    </property>
+    <addaction name="actionLocales_Comerciales"/>
+    <addaction name="actionAreas_Comunes"/>
+   </widget>
+   <widget class="QMenu" name="menuGastos_Egresos">
+    <property name="title">
+     <string>Gastos</string>
+    </property>
+    <addaction name="actionRegistrar_Gastos"/>
+    <addaction name="actionReporte_Gastos"/>
+    <addaction name="actionAlta_Prest_Serv"/>
+    <addaction name="actionAlta_Empleado"/>
+   </widget>
+   <widget class="QMenu" name="menuOtros_Ingresos">
+    <property name="title">
+     <string>Otros Ingresos</string>
+    </property>
+    <addaction name="actionReporte_Ingresos"/>
+    <addaction name="actionRegistro_O_Ingresos"/>
+   </widget>
+   <widget class="QMenu" name="menuCartera_Cobranza">
+    <property name="title">
+     <string>Cartera Cobranza</string>
+    </property>
+    <addaction name="actionCartera_Cuotas_Mantto"/>
+    <addaction name="actionCartera_Areas_Comunes"/>
+   </widget>
+   <widget class="QMenu" name="menuEstadisticas_y_Graficos">
+    <property name="title">
+     <string>Estadisticas y Graficos</string>
+    </property>
+    <addaction name="actionDashboard_Ingresos"/>
+    <addaction name="actionDashboard_Gastos"/>
+    <addaction name="actionDasboard_Cartera_CM"/>
+    <addaction name="actionDasboard_Cartera_AC"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionContacto"/>
+    <addaction name="actionManuales"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguracion">
+    <property name="title">
+     <string>Configuracion</string>
+    </property>
+    <addaction name="actionCarga_Locales"/>
+    <addaction name="actionCarga_Areas_Comunes"/>
+    <addaction name="actionCarga_Clientes"/>
+    <addaction name="actionCarga_Contratos"/>
+    <addaction name="actionCarga_Saldos_Iniciales"/>
+    <addaction name="actionRegCuentas"/>
+   </widget>
+   <addaction name="menuLocales_Comerciales"/>
+   <addaction name="menuAreas_comunes"/>
+   <addaction name="menuFacturacion"/>
+   <addaction name="menuActualizar_Cuotas"/>
+   <addaction name="menuGastos_Egresos"/>
+   <addaction name="menuOtros_Ingresos"/>
+   <addaction name="menuCartera_Cobranza"/>
+   <addaction name="menuEstadisticas_y_Graficos"/>
+   <addaction name="menuConfiguracion"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777213</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+  </widget>
+  <action name="actionRegMovCM">
+   <property name="text">
+    <string>Reg. Movimientos CM</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionAltaLocal">
+   <property name="text">
+    <string>Alta Local Comercial</string>
+   </property>
+  </action>
+  <action name="actionRegMovAC">
+   <property name="text">
+    <string>Reg. Movimientos AC</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionAltaAC">
+   <property name="text">
+    <string>Alta Area Comun</string>
+   </property>
+  </action>
+  <action name="actionRegContrato">
+   <property name="text">
+    <string>Registrar Contrato</string>
+   </property>
+  </action>
+  <action name="actionReporte_Gastos">
+   <property name="text">
+    <string>Reporte Gastos</string>
+   </property>
+  </action>
+  <action name="actionRegistro_O_Ingresos">
+   <property name="text">
+    <string>Registro otros Ingresos</string>
+   </property>
+  </action>
+  <action name="actionReporte_Ingresos">
+   <property name="text">
+    <string>Reporte Ingresos</string>
+   </property>
+  </action>
+  <action name="actionCartera_Cuotas_Mantto">
+   <property name="text">
+    <string>Cuotas Locales Comerciales</string>
+   </property>
+  </action>
+  <action name="actionCartera_Areas_Comunes">
+   <property name="text">
+    <string>Cuotas Areas Comunes</string>
+   </property>
+  </action>
+  <action name="actionDashboard_Gastos">
+   <property name="text">
+    <string>Dashboard Gastos</string>
+   </property>
+  </action>
+  <action name="actionDashboard_Ingresos">
+   <property name="text">
+    <string>Dashboard Ingresos</string>
+   </property>
+  </action>
+  <action name="actionDasboard_Cartera_CM">
+   <property name="text">
+    <string>Dasboard Cartera Locales</string>
+   </property>
+  </action>
+  <action name="actionDasboard_Cartera_AC">
+   <property name="text">
+    <string>Dasboard Cartera Areas</string>
+   </property>
+  </action>
+  <action name="actionNuevo_Usuario">
+   <property name="text">
+    <string>Nuevo Usuario</string>
+   </property>
+  </action>
+  <action name="actionCambiar_Usuario">
+   <property name="text">
+    <string>Cambiar Usuario</string>
+   </property>
+  </action>
+  <action name="actionRegistro_Empresa">
+   <property name="text">
+    <string>Registro Empresa</string>
+   </property>
+  </action>
+  <action name="actionRegistro_Proveedor">
+   <property name="text">
+    <string>Registro Proveedor</string>
+   </property>
+  </action>
+  <action name="actionRegistro_Empleado">
+   <property name="text">
+    <string>Registro Empleado</string>
+   </property>
+  </action>
+  <action name="actionContacto">
+   <property name="text">
+    <string>Contacto</string>
+   </property>
+  </action>
+  <action name="actionManuales">
+   <property name="text">
+    <string>Manuales</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Cliente">
+   <property name="text">
+    <string>Registrar Cliente</string>
+   </property>
+  </action>
+  <action name="actionAlta_Proveedor">
+   <property name="text">
+    <string>Alta Proveedor</string>
+   </property>
+  </action>
+  <action name="actionEditar">
+   <property name="text">
+    <string>Editar</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_cliente">
+   <property name="text">
+    <string>Registrar Cliente</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Gastos">
+   <property name="text">
+    <string>Registro de Gastos</string>
+   </property>
+  </action>
+  <action name="actionAlta_Prest_Serv">
+   <property name="text">
+    <string>Reg Prestador Servicios</string>
+   </property>
+  </action>
+  <action name="actionAlta_Empleado">
+   <property name="text">
+    <string>Reg Empleados</string>
+   </property>
+  </action>
+  <action name="actionFacturacion_Masiva">
+   <property name="text">
+    <string>Facturacion Masiva</string>
+   </property>
+  </action>
+  <action name="actionLocales_Comerciales">
+   <property name="text">
+    <string>Locales Comerciales</string>
+   </property>
+  </action>
+  <action name="actionAreas_Comunes">
+   <property name="text">
+    <string>Areas Comunes</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Empresa">
+   <property name="text">
+    <string>Registrar Empresa</string>
+   </property>
+  </action>
+  <action name="actionCambiar_usuario">
+   <property name="text">
+    <string>Cambiar Usuario</string>
+   </property>
+  </action>
+  <action name="actionCarga_Clientes">
+   <property name="text">
+    <string>Carga Clientes</string>
+   </property>
+  </action>
+  <action name="actionCarga_Locales">
+   <property name="text">
+    <string>Carga Locales</string>
+   </property>
+  </action>
+  <action name="actionCarga_Areas_Comunes">
+   <property name="text">
+    <string>Carga Areas Comunes</string>
+   </property>
+  </action>
+  <action name="actionCarga_Contratos">
+   <property name="text">
+    <string>Carga Contratos</string>
+   </property>
+  </action>
+  <action name="actionCarga_Saldos_Iniciales">
+   <property name="text">
+    <string>Carga Saldos Iniciales</string>
+   </property>
+  </action>
+  <action name="actionRegCuentas">
+   <property name="text">
+    <string>Cuentas Bancarias</string>
+   </property>
+  </action>
+  <action name="actionBuscar_Contratos">
+   <property name="text">
+    <string>Buscar Contratos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
