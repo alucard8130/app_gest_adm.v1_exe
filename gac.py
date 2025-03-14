@@ -2165,7 +2165,7 @@ class PantallaPrincipal():
 
     def reiniciar_sistema(self):
         self.pp.close()
-        os.system("python main.py")
+        os.system("python gac.py")
     
 if __name__ == "__main__":
     app = QApplication(sys.argv)
