@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>653</width>
-    <height>486</height>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,10 +22,10 @@
   <widget class="QPushButton" name="btnRegistrar">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>20</x>
      <y>440</y>
-     <width>150</width>
-     <height>40</height>
+     <width>261</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -56,10 +56,10 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btnSalir">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>370</x>
      <y>440</y>
-     <width>150</width>
-     <height>40</height>
+     <width>261</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -160,8 +160,8 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>280</y>
+      <x>230</x>
+      <y>180</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -173,9 +173,9 @@ color: rgb(216, 224, 236);</string>
    <widget class="QComboBox" name="cmbTipoCuota">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>60</y>
-      <width>171</width>
+      <x>230</x>
+      <y>50</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -217,9 +217,9 @@ border-radius:5px;</string>
    <widget class="QTextEdit" name="txtComentarios">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>270</y>
-      <width>231</width>
+      <x>20</x>
+      <y>280</y>
+      <width>611</width>
       <height>61</height>
      </rect>
     </property>
@@ -230,8 +230,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>160</y>
+      <x>230</x>
+      <y>110</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -243,8 +243,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>40</y>
+      <x>20</x>
+      <y>30</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -256,9 +256,9 @@ border-radius:5px;</string>
    <widget class="QComboBox" name="cmbFormaPago">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>180</y>
-      <width>171</width>
+      <x>230</x>
+      <y>130</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -295,8 +295,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>160</y>
+      <x>20</x>
+      <y>110</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -308,9 +308,9 @@ border-radius:5px;</string>
    <widget class="QDateEdit" name="boxDate">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>300</y>
-      <width>111</width>
+      <x>20</x>
+      <y>200</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -324,8 +324,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>250</y>
+      <x>20</x>
+      <y>260</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -338,7 +338,7 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>40</y>
+      <y>30</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -350,8 +350,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>280</y>
+      <x>20</x>
+      <y>180</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -364,8 +364,8 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>180</y>
-      <width>161</width>
+      <y>130</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -382,8 +382,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>40</y>
+      <x>230</x>
+      <y>30</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -395,8 +395,8 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>160</y>
+      <x>440</x>
+      <y>110</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -409,7 +409,7 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>60</y>
+      <y>50</y>
       <width>191</width>
       <height>30</height>
      </rect>
@@ -428,9 +428,9 @@ border-radius:5px;
    <widget class="QLineEdit" name="txtAreaC">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>113</width>
+      <x>20</x>
+      <y>50</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -441,9 +441,9 @@ border-radius:5px;
    <widget class="QLineEdit" name="txtImporte">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>180</y>
-      <width>113</width>
+      <x>20</x>
+      <y>130</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>
@@ -454,9 +454,9 @@ border-radius:5px;
    <widget class="QLineEdit" name="txtCheque">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>300</y>
-      <width>71</width>
+      <x>230</x>
+      <y>200</y>
+      <width>191</width>
       <height>30</height>
      </rect>
     </property>

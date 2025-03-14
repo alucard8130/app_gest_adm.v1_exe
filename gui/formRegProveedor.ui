@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>590</width>
-    <height>506</height>
+    <height>489</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,10 +22,10 @@
   <widget class="QPushButton" name="btnRegistrar">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>450</y>
-     <width>150</width>
-     <height>40</height>
+     <width>265</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -56,10 +56,10 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btnSalir">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>310</x>
      <y>450</y>
-     <width>150</width>
-     <height>40</height>
+     <width>265</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -148,7 +148,7 @@ color: rgb(216, 224, 236);</string>
      <x>-10</x>
      <y>70</y>
      <width>601</width>
-     <height>351</height>
+     <height>371</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -173,8 +173,8 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>280</y>
+      <x>320</x>
+      <y>220</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -186,7 +186,7 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>320</x>
       <y>20</y>
       <width>71</width>
       <height>16</height>
@@ -199,22 +199,22 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>190</y>
-      <width>71</width>
+      <x>320</x>
+      <y>160</y>
+      <width>101</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Cta Banco*</string>
+     <string>Cuenta Bancaria*</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtEmail">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>300</y>
-      <width>221</width>
+      <x>320</x>
+      <y>240</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -250,7 +250,7 @@ color: rgb(216, 224, 236);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>100</y>
+      <y>90</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -262,9 +262,9 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLineEdit" name="txtBanco">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>210</y>
-      <width>151</width>
+      <x>320</x>
+      <y>180</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -277,7 +277,7 @@ color: rgb(216, 224, 236);</string>
      <rect>
       <x>20</x>
       <y>40</y>
-      <width>321</width>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -289,8 +289,8 @@ color: rgb(216, 224, 236);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>120</y>
-      <width>321</width>
+      <y>110</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -301,10 +301,10 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLineEdit" name="txtDireccion">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>20</x>
       <y>300</y>
-      <width>311</width>
-      <height>31</height>
+      <width>561</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -314,7 +314,7 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>20</x>
       <y>280</y>
       <width>101</width>
       <height>16</height>
@@ -327,8 +327,8 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>100</y>
+      <x>320</x>
+      <y>90</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -341,7 +341,7 @@ color: rgb(216, 224, 236);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>190</y>
+      <y>160</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -353,9 +353,9 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLineEdit" name="txtTelefono">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>210</y>
-      <width>121</width>
+      <x>20</x>
+      <y>240</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -366,8 +366,8 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>190</y>
+      <x>20</x>
+      <y>220</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -380,8 +380,8 @@ color: rgb(216, 224, 236);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>210</y>
-      <width>231</width>
+      <y>180</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -392,9 +392,9 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLineEdit" name="txtRFC">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>320</x>
       <y>40</y>
-      <width>191</width>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>
@@ -405,9 +405,9 @@ color: rgb(216, 224, 236);</string>
    <widget class="QLineEdit" name="txtCURP">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>120</y>
-      <width>191</width>
+      <x>320</x>
+      <y>110</y>
+      <width>265</width>
       <height>30</height>
      </rect>
     </property>

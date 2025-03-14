@@ -110,7 +110,7 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btnBuscar">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>500</y>
      <width>150</width>
      <height>41</height>
@@ -145,7 +145,7 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btnRegCob">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>240</x>
      <y>500</y>
      <width>150</width>
      <height>41</height>

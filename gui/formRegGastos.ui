@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>585</width>
-    <height>481</height>
+    <height>460</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,9 +23,9 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>430</y>
-     <width>150</width>
-     <height>40</height>
+     <y>420</y>
+     <width>251</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -56,10 +56,10 @@ border-radius:5px;</string>
   <widget class="QPushButton" name="btnSalir">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>430</y>
-     <width>150</width>
-     <height>40</height>
+     <x>310</x>
+     <y>420</y>
+     <width>251</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="font">
@@ -148,7 +148,7 @@ color: rgb(216, 224, 236);</string>
      <x>0</x>
      <y>70</y>
      <width>641</width>
-     <height>341</height>
+     <height>331</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -162,7 +162,7 @@ color: rgb(216, 224, 236);</string>
      <rect>
       <x>20</x>
       <y>180</y>
-      <width>231</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -298,9 +298,9 @@ border-radius:5px;</string>
    <widget class="QDateEdit" name="boxDate">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>150</x>
       <y>270</y>
-      <width>111</width>
+      <width>121</width>
       <height>30</height>
      </rect>
     </property>
@@ -368,7 +368,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>270</y>
-      <width>113</width>
+      <width>121</width>
       <height>30</height>
      </rect>
     </property>
@@ -418,7 +418,7 @@ border-radius:5px;</string>
      <rect>
       <x>310</x>
       <y>40</y>
-      <width>171</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -462,7 +462,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>40</y>
-      <width>231</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -481,7 +481,7 @@ border-radius:5px;</string>
      <rect>
       <x>310</x>
       <y>270</y>
-      <width>113</width>
+      <width>121</width>
       <height>30</height>
      </rect>
     </property>
@@ -492,7 +492,7 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>250</y>
       <width>101</width>
       <height>16</height>
@@ -505,9 +505,9 @@ border-radius:5px;</string>
    <widget class="QLineEdit" name="txtISR_ret">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>270</y>
-      <width>113</width>
+      <width>121</width>
       <height>30</height>
      </rect>
     </property>
@@ -533,7 +533,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>110</y>
-      <width>191</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -546,7 +546,7 @@ border-radius:5px;</string>
      <rect>
       <x>310</x>
       <y>110</y>
-      <width>131</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>

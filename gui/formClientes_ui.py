@@ -56,7 +56,7 @@ class Ui_formClientes(object):
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.txtNombreCliente = QLineEdit(self.frame_2)
         self.txtNombreCliente.setObjectName(u"txtNombreCliente")
-        self.txtNombreCliente.setGeometry(QRect(20, 110, 250, 30))
+        self.txtNombreCliente.setGeometry(QRect(20, 110, 280, 30))
         self.txtNombreCliente.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.txtNombreCliente.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
@@ -74,7 +74,7 @@ class Ui_formClientes(object):
         self.cmbTipoContribuyente.addItem("")
         self.cmbTipoContribuyente.setObjectName(u"cmbTipoContribuyente")
         self.cmbTipoContribuyente.setEnabled(True)
-        self.cmbTipoContribuyente.setGeometry(QRect(20, 250, 201, 30))
+        self.cmbTipoContribuyente.setGeometry(QRect(20, 250, 280, 30))
         self.cmbTipoContribuyente.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.label_3 = QLabel(self.frame_2)
@@ -85,7 +85,7 @@ class Ui_formClientes(object):
         self.label_8.setGeometry(QRect(380, 290, 49, 16))
         self.groupBox = QGroupBox(self.frame_2)
         self.groupBox.setObjectName(u"groupBox")
-        self.groupBox.setGeometry(QRect(30, 10, 111, 61))
+        self.groupBox.setGeometry(QRect(20, 10, 280, 61))
         self.groupBox.setStyleSheet(u"")
         self.checkBoxStatus = QCheckBox(self.groupBox)
         self.checkBoxStatus.setObjectName(u"checkBoxStatus")
@@ -102,32 +102,32 @@ class Ui_formClientes(object):
         self.label_9.setGeometry(QRect(370, 90, 111, 16))
         self.txtRFC = QLineEdit(self.frame_2)
         self.txtRFC.setObjectName(u"txtRFC")
-        self.txtRFC.setGeometry(QRect(20, 180, 181, 30))
+        self.txtRFC.setGeometry(QRect(20, 180, 280, 30))
         self.txtRFC.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;\n"
 "")
         self.txtRFC.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
         self.txtEmail = QLineEdit(self.frame_2)
         self.txtEmail.setObjectName(u"txtEmail")
-        self.txtEmail.setGeometry(QRect(370, 40, 201, 30))
+        self.txtEmail.setGeometry(QRect(370, 40, 281, 30))
         self.txtEmail.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.txtEmail.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
         self.txtCel = QLineEdit(self.frame_2)
         self.txtCel.setObjectName(u"txtCel")
-        self.txtCel.setGeometry(QRect(370, 110, 151, 30))
+        self.txtCel.setGeometry(QRect(370, 110, 281, 30))
         self.txtCel.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.txtCel.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
         self.txtGiro = QLineEdit(self.frame_2)
         self.txtGiro.setObjectName(u"txtGiro")
-        self.txtGiro.setGeometry(QRect(370, 180, 231, 30))
+        self.txtGiro.setGeometry(QRect(370, 180, 281, 30))
         self.txtGiro.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.txtGiro.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
         self.txtCURP = QLineEdit(self.frame_2)
         self.txtCURP.setObjectName(u"txtCURP")
-        self.txtCURP.setGeometry(QRect(20, 330, 250, 30))
+        self.txtCURP.setGeometry(QRect(20, 330, 280, 30))
         self.txtCURP.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.txtCURP.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft)
@@ -149,7 +149,7 @@ class Ui_formClientes(object):
         self.cmbTipoCliente.addItem("")
         self.cmbTipoCliente.setObjectName(u"cmbTipoCliente")
         self.cmbTipoCliente.setEnabled(True)
-        self.cmbTipoCliente.setGeometry(QRect(370, 250, 201, 30))
+        self.cmbTipoCliente.setGeometry(QRect(370, 250, 281, 30))
         self.cmbTipoCliente.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:5px;")
         self.frame_3 = QFrame(formClientes)
@@ -161,8 +161,7 @@ class Ui_formClientes(object):
         self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
         self.btnGuardar = QPushButton(self.frame_3)
         self.btnGuardar.setObjectName(u"btnGuardar")
-        self.btnGuardar.setGeometry(QRect(25, 12, 150, 30))
-        self.btnGuardar.setMaximumSize(QSize(150, 100))
+        self.btnGuardar.setGeometry(QRect(10, 12, 280, 30))
         font1 = QFont()
         font1.setFamilies([u"Comic Sans MS"])
         font1.setPointSize(12)
@@ -179,26 +178,9 @@ class Ui_formClientes(object):
         self.btnGuardar.setIcon(icon)
         self.btnGuardar.setIconSize(QSize(30, 30))
         self.btnGuardar.setFlat(True)
-        self.btnEditar = QPushButton(self.frame_3)
-        self.btnEditar.setObjectName(u"btnEditar")
-        self.btnEditar.setGeometry(QRect(255, 10, 150, 30))
-        self.btnEditar.setMaximumSize(QSize(150, 100))
-        self.btnEditar.setFont(font1)
-        self.btnEditar.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.btnEditar.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
-        self.btnEditar.setStyleSheet(u"background-color: rgb(8, 19, 95);\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius:5px;\n"
-"")
-        icon1 = QIcon()
-        icon1.addFile(u"../iconos/Custom-Icon-Design-Pretty-Office-9-Edit-file.256.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btnEditar.setIcon(icon1)
-        self.btnEditar.setIconSize(QSize(20, 20))
-        self.btnEditar.setFlat(True)
         self.btnSalir = QPushButton(self.frame_3)
         self.btnSalir.setObjectName(u"btnSalir")
-        self.btnSalir.setGeometry(QRect(485, 10, 150, 30))
-        self.btnSalir.setMaximumSize(QSize(150, 100))
+        self.btnSalir.setGeometry(QRect(360, 10, 281, 30))
         self.btnSalir.setFont(font1)
         self.btnSalir.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.btnSalir.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
@@ -206,9 +188,9 @@ class Ui_formClientes(object):
 "color: rgb(255, 255, 255);\n"
 "border-radius:5px;\n"
 "")
-        icon2 = QIcon()
-        icon2.addFile(u"../iconos/salir.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btnSalir.setIcon(icon2)
+        icon1 = QIcon()
+        icon1.addFile(u"../iconos/salir.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btnSalir.setIcon(icon1)
         self.btnSalir.setIconSize(QSize(20, 20))
         self.btnSalir.setFlat(True)
 
@@ -243,7 +225,6 @@ class Ui_formClientes(object):
         self.cmbTipoCliente.setItemText(5, QCoreApplication.translate("formClientes", u"Recuperacion Servicios", None))
 
         self.btnGuardar.setText(QCoreApplication.translate("formClientes", u"Guardar", None))
-        self.btnEditar.setText(QCoreApplication.translate("formClientes", u"Editar", None))
         self.btnSalir.setText(QCoreApplication.translate("formClientes", u"Salir", None))
     # retranslateUi
 

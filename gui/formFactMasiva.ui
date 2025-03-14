@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>347</width>
+    <width>344</width>
     <height>291</height>
    </rect>
   </property>
@@ -101,7 +101,7 @@ background-color: rgb(245, 245, 252);</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>10</y>
       <width>91</width>
       <height>16</height>
@@ -117,9 +117,9 @@ background-color: rgb(245, 245, 252);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>30</y>
-      <width>191</width>
+      <width>321</width>
       <height>30</height>
      </rect>
     </property>
@@ -149,9 +149,9 @@ border-radius:5px;</string>
    <widget class="QDateEdit" name="fechaPeriodo">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>110</y>
-      <width>151</width>
+      <width>321</width>
       <height>30</height>
      </rect>
     </property>
@@ -170,7 +170,7 @@ border-radius:5px;</string>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>10</x>
       <y>90</y>
       <width>121</width>
       <height>20</height>
@@ -208,17 +208,11 @@ border-radius:5px;</string>
    <widget class="QPushButton" name="btnSalir">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>180</x>
       <y>10</y>
-      <width>100</width>
-      <height>35</height>
+      <width>151</width>
+      <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>
@@ -259,17 +253,11 @@ border-radius:5px;
    <widget class="QPushButton" name="btnEjecutar">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
-      <width>111</width>
-      <height>35</height>
+      <width>151</width>
+      <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>

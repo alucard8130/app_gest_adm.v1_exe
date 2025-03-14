@@ -103,7 +103,7 @@ background-color: rgb(245, 245, 252);</string>
      <rect>
       <x>20</x>
       <y>110</y>
-      <width>181</width>
+      <width>250</width>
       <height>30</height>
      </rect>
     </property>
@@ -153,9 +153,9 @@ border-radius:5px;</string>
    <widget class="QGroupBox" name="groupBoxStatus">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>10</y>
-      <width>111</width>
+      <width>251</width>
       <height>61</height>
      </rect>
     </property>
@@ -226,7 +226,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>194</y>
-      <width>101</width>
+      <width>250</width>
       <height>30</height>
      </rect>
     </property>
@@ -244,7 +244,7 @@ border-radius:5px;
      <rect>
       <x>330</x>
       <y>194</y>
-      <width>131</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -261,7 +261,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>270</y>
-      <width>250</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -304,7 +304,7 @@ border-radius:5px;</string>
      <rect>
       <x>330</x>
       <y>110</y>
-      <width>201</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -368,7 +368,7 @@ border-radius:5px;</string>
      <rect>
       <x>330</x>
       <y>270</y>
-      <width>131</width>
+      <width>251</width>
       <height>30</height>
      </rect>
     </property>
@@ -430,15 +430,9 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>12</y>
-      <width>150</width>
+      <width>170</width>
       <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>
@@ -479,17 +473,11 @@ border-radius:5px;
    <widget class="QPushButton" name="btnEditar">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>220</x>
       <y>10</y>
-      <width>150</width>
+      <width>170</width>
       <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>
@@ -530,17 +518,11 @@ border-radius:5px;
    <widget class="QPushButton" name="btnSalir">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>420</x>
       <y>10</y>
-      <width>150</width>
+      <width>171</width>
       <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>

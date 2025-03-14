@@ -103,7 +103,7 @@ background-color: rgb(245, 245, 252);</string>
      <rect>
       <x>20</x>
       <y>110</y>
-      <width>250</width>
+      <width>280</width>
       <height>30</height>
      </rect>
     </property>
@@ -150,7 +150,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>250</y>
-      <width>201</width>
+      <width>280</width>
       <height>30</height>
      </rect>
     </property>
@@ -203,9 +203,9 @@ border-radius:5px;</string>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>10</y>
-      <width>111</width>
+      <width>280</width>
       <height>61</height>
      </rect>
     </property>
@@ -276,7 +276,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>180</y>
-      <width>181</width>
+      <width>280</width>
       <height>30</height>
      </rect>
     </property>
@@ -294,7 +294,7 @@ border-radius:5px;
      <rect>
       <x>370</x>
       <y>40</y>
-      <width>201</width>
+      <width>281</width>
       <height>30</height>
      </rect>
     </property>
@@ -311,7 +311,7 @@ border-radius:5px;</string>
      <rect>
       <x>370</x>
       <y>110</y>
-      <width>151</width>
+      <width>281</width>
       <height>30</height>
      </rect>
     </property>
@@ -328,7 +328,7 @@ border-radius:5px;</string>
      <rect>
       <x>370</x>
       <y>180</y>
-      <width>231</width>
+      <width>281</width>
       <height>30</height>
      </rect>
     </property>
@@ -345,7 +345,7 @@ border-radius:5px;</string>
      <rect>
       <x>20</x>
       <y>330</y>
-      <width>250</width>
+      <width>280</width>
       <height>30</height>
      </rect>
     </property>
@@ -404,7 +404,7 @@ border-radius:5px;</string>
      <rect>
       <x>370</x>
       <y>250</y>
-      <width>201</width>
+      <width>281</width>
       <height>30</height>
      </rect>
     </property>
@@ -471,17 +471,11 @@ border-radius:5px;</string>
    <widget class="QPushButton" name="btnGuardar">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>10</x>
       <y>12</y>
-      <width>150</width>
+      <width>280</width>
       <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>
@@ -519,71 +513,14 @@ border-radius:5px;
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnEditar">
-    <property name="geometry">
-     <rect>
-      <x>255</x>
-      <y>10</y>
-      <width>150</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <family>Comic Sans MS</family>
-      <pointsize>12</pointsize>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LayoutDirection::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(8, 19, 95);
-color: rgb(255, 255, 255);
-border-radius:5px;
-</string>
-    </property>
-    <property name="text">
-     <string>Editar</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../iconos/Custom-Icon-Design-Pretty-Office-9-Edit-file.256.png</normaloff>../iconos/Custom-Icon-Design-Pretty-Office-9-Edit-file.256.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>20</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnSalir">
     <property name="geometry">
      <rect>
-      <x>485</x>
+      <x>360</x>
       <y>10</y>
-      <width>150</width>
+      <width>281</width>
       <height>30</height>
      </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>100</height>
-     </size>
     </property>
     <property name="font">
      <font>
