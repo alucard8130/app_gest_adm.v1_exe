@@ -67,3 +67,4 @@ en alta de areas comunes falta programar proceso de edicion
 
 
 pyinstaller --noconfirm --onedir --windowed --add-data("conexion_db.py:.") --add-data("model:model") --add-data("gui:gui") --add-data("data:data")  {install_gac}.py gac.py
+pyinstaller --noconfirm --onedir --windowed   {install_gac}.py gac.py
