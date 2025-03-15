@@ -64,3 +64,6 @@ revisar antes de dar registrar o editar valide si tiene elementos los widgets
 en alta de areas comunes falta programar proceso de edicion
 
 \n
+
+
+pyinstaller --noconfirm --onedir --windowed --add-data("conexion_db.py:.") --add-data("model:model") --add-data("gui:gui") --add-data("data:data")  {install_gac}.py gac.py
